@@ -5,7 +5,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const loader = new THREE.GLTFLoader();
-loader.load('path/to/your/model.glb', function (gltf) {
+loader.load('models/blender-3.5-splash.glb', function (gltf) {
     scene.add(gltf.scene);
     renderer.render(scene, camera);
 }, undefined, function (error) {
